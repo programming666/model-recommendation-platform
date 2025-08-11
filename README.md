@@ -82,6 +82,24 @@ cd model-recommendation-platform
 npm run install:all
 ```
 
+3. 配置.env变量
+前端和后端都需要一些环境变量才能正常运行。你可以将环境变量存储在`.env`文件中，格式如下：
+前端env：
+```
+# .env
+FRONTEND_URI=http://localhost:3000
+# 前端.env,存贮在frontend/.env文件中
+```
+
+后端env：
+```
+#.env
+HUGGINGFACE_API_TOKEN="<huggingface api token(可选)>"
+HUGGINGFACE_MAX_MODELS=1000000000000000 # 默认 1000
+PORT=<端口号（可选，默认3002）>
+# 后端.env存贮在backend/.env文件中
+```
+
 ### 开发环境运行
 
 ```bash
